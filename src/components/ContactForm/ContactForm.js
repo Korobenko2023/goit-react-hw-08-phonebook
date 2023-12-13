@@ -3,15 +3,15 @@ import { Formik } from 'formik';
 import { ContactFormButton, ContactFormError, ContactFormField, ContactFormForm, ContactFormLabel } from './ContactForm.style';
 import { useDispatch, useSelector } from 'react-redux';
 import toast from 'react-hot-toast';
-import { selectContacts } from 'redux/selectors';
-import { addContact } from 'redux/operations';
+import { selectContacts } from 'redux/contacts/selectors';
+import { addContact } from 'redux/contacts/operations';
 
  const validationSchema = Yup.object().shape({
   name: Yup.string()
     .min(2, 'Name must contain at least 2 characters')
     .max(40, 'Too long name')
     .required('Name is required!'),
-  phone: Yup.string()
+  number: Yup.string()
     .matches(/^\+(?:[0-9] ?){6,14}[0-9]$/, {
       message: 'Invalid Phone Number!',
       excludeEmptyString: false,
@@ -38,7 +38,7 @@ export const ContactForm = () => {
     <Formik
       initialValues={{
         name: '',
-        phone: '',
+        number: '',
       }}
       onSubmit={addNewContact}
       validationSchema={validationSchema}
@@ -49,10 +49,10 @@ export const ContactForm = () => {
               
               <ContactFormError name="name" component="div" />      
               
-            <ContactFormLabel htmlFor="phone">Phone</ContactFormLabel>
-              <ContactFormField id="phone" type="tel" name="phone" placeholder="+XX..." />
+            <ContactFormLabel htmlFor="number">Number</ContactFormLabel>
+              <ContactFormField id="number" type="tel" name="phone" placeholder="+XX..." />
               
-            <ContactFormError name="phone" component="div" />
+            <ContactFormError name="number" component="div" />
 
             <ContactFormButton type="submit">Add contact</ContactFormButton>
         </ContactFormForm>
