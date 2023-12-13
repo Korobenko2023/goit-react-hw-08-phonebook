@@ -3,51 +3,61 @@
 // import { ContactForm } from "components/ContactForm/ContactForm";
 // import { Filter } from "components/Filter/Filter";
 // import { ContactList } from "components/ContactList/ContactList";
-import { useDispatch, useSelector } from "react-redux";
+
 // import { selectContacts, selectError, selectIsLoading } from "redux/contacts/selectors";
-import { useEffect } from "react";
-import { Loader } from "components/Loader/Loader";
+
 // import toast, { Toaster } from "react-hot-toast";
-import { refreshUser } from "redux/auth/operations";
-import { selectIsRefreshing } from "redux/auth/selectors";
-import { Route, Routes } from "react-router-dom";
-import { AppLayout } from "./AppLayout";
 
-export const App = () => {
-  const dispatch = useDispatch();
-  const isRefreshing = useSelector(selectIsRefreshing);
+
+
+
+// import { useEffect } from "react";
+// import { Loader } from "components/Loader/Loader";
+// import { useDispatch, useSelector } from "react-redux";
+// import { refreshUser } from "redux/auth/operations";
+// import { selectIsRefreshing } from "redux/auth/selectors";
+// import { Route, Routes } from "react-router-dom";
+// import { AppLayout } from "./AppLayout";
+
+// export const App = () => {
+//   const dispatch = useDispatch();
+//   const isRefreshing = useSelector(selectIsRefreshing);
   
-  useEffect(() => {
-    dispatch(refreshUser());
-  }, [dispatch]);
+//   useEffect(() => {
+//     dispatch(refreshUser());
+//   }, [dispatch]);
 
-  return isRefreshing ? (
-    <Loader />
-  ) : (
-    <Routes>
-      <Route path="/" element={<AppLayout />}>
-        <Route index element={<HomePage />} />
-        <Route
-          path="/register"
-          element={
-            <RestrictedRoute redirectTo="/tasks" component={<RegisterPage />} />
-          }
-        />
-        <Route
-          path="/login"
-          element={
-            <RestrictedRoute redirectTo="/tasks" component={<LoginPage />} />
-          }
-        />
-        <Route
-          path="/tasks"
-          element={
-            <PrivateRoute redirectTo="/login" component={<TasksPage />} />
-          }
-        />
-      </Route>
-    </Routes>
-  );
+//   return isRefreshing ? (
+//     <Loader />
+//   ) : (
+//     <Routes>
+//       <Route path="/" element={<AppLayout />}>
+//         <Route index element={<HomePage />} />
+//         <Route
+//           path="/register"
+//           element={
+//             <RestrictedRoute redirectTo="/tasks" component={<RegisterPage />} />
+//           }
+//         />
+//         <Route
+//           path="/login"
+//           element={
+//             <RestrictedRoute redirectTo="/tasks" component={<LoginPage />} />
+//           }
+//         />
+//         <Route
+//           path="/tasks"
+//           element={
+//             <PrivateRoute redirectTo="/login" component={<TasksPage />} />
+//           }
+//         />
+//       </Route>
+//     </Routes>
+//   );
+
+
+
+
   //  ( <AppContainer>        
   //        <AppTitle>Phonebook</AppTitle>
   //        <ContactForm /> 
@@ -64,7 +74,14 @@ export const App = () => {
   //       <GlobalStyle />
   //     </AppContainer>
   //   );  
-};
+  
+  
+  
+  
+  
+  
+  
+// };
   
  
 

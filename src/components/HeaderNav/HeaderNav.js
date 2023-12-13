@@ -1,14 +1,21 @@
-import { useSelector } from "react-redux";
-import { Header, HeaderLink, HeaderNavUl } from "./HeaderNav.styled";
-import { selectIsLoggedIn } from "redux/auth/selectors";
+// import { useSelector } from "react-redux";
+// import { Header, HeaderLink, HeaderNavUl } from "./HeaderNav.styled";
+// import { selectIsLoggedIn } from "redux/auth/selectors";
 
-export const HeaderNav = () => {
-  const isLoggedIn = useSelector(selectIsLoggedIn);
+// export const HeaderNav = () => {
+//   const isLoggedIn = useSelector(selectIsLoggedIn);
  
-  return (
-    <Header>
-      <Navigation />
-      {isLoggedIn ? <UserMenu /> : <AuthNav />}
+//   return (
+//     <Header>
+//       <Navigation />
+//       {isLoggedIn ? <UserMenu /> : <AuthNav />}
+
+
+
+
+
+
+
       {/* <nav>
         <HeaderNavUl>
           <li>
@@ -19,7 +26,11 @@ export const HeaderNav = () => {
           </li>
         </HeaderNavUl>
       </nav> */}
-    </Header>
-  );
-};
+
+
+
+
+//     </Header>
+//   );
+// };
 
