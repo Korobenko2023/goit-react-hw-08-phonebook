@@ -19,8 +19,7 @@ body {
   line-height: 1.3;
   /* background-color: ${p => p.theme.colors.ocean}; */
   font-size: 16px;
-  background-color: transparent;
-  background-image: url('../../image/Book.jpg');
+  background: url('image/Book.jpg');
   background-size: cover;
   background-position: center;
   
