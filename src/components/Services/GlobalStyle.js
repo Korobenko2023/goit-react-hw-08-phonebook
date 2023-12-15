@@ -17,11 +17,12 @@ body {
   color: ${p => p.theme.colors.black};
   letter-spacing: 0.02em;
   line-height: 1.3;
-  /* background-color: ${p => p.theme.colors.ocean}; */
   font-size: 16px;
-  background: url('image/Book.jpg');
-  background-size: cover;
-  background-position: center;
+  background: url('image/garden.jpg');
+   background-position: top;
+  /* background: url('image/Book.jpg'); 
+  background-position: center; */
+   background-size: cover;
   
 }
 

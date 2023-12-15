@@ -1,3 +1,4 @@
+import { LoginForm } from "components/LoginForm/loginForm";
 import { Helmet } from "react-helmet";
 
 export default function Login() {
@@ -6,7 +7,7 @@ export default function Login() {
             <Helmet>
                 <title>Login</title>
             </Helmet>
-              {/* <LoginForm /> */}
+              <LoginForm />
         </div>
     )
 }

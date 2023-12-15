@@ -35,13 +35,14 @@ export const ContactForm = () => {
 };
       
   return (
+    
     <Formik
       initialValues={{
         name: '',
         number: '',
       }}
       onSubmit={addNewContact}
-      validationSchema={validationSchema}
+      validationSchema={validationSchema} autoComplete="off"
     >
         <ContactFormForm>
             <ContactFormLabel htmlFor="name">Name</ContactFormLabel>
@@ -50,7 +51,7 @@ export const ContactForm = () => {
               <ContactFormError name="name" component="div" />      
               
             <ContactFormLabel htmlFor="number">Number</ContactFormLabel>
-              <ContactFormField id="number" type="tel" name="phone" placeholder="+XX..." />
+              <ContactFormField id="number" type="tel" name="number" placeholder="+XX..." />
               
             <ContactFormError name="number" component="div" />
 
