@@ -1,36 +1,18 @@
-// import { useSelector } from "react-redux";
-// import { Header, HeaderLink, HeaderNavUl } from "./HeaderNav.styled";
-// import { selectIsLoggedIn } from "redux/auth/selectors";
+import { useSelector } from "react-redux";
+import { Header } from "./HeaderNav.styled";
+import { selectIsLoggedIn } from "redux/auth/selectors";
+import { Navigation } from "components/Navigation/navigation";
+import { AuthNav } from "components/AuthNav/AuthNav";
+import { UserMenu } from "components/UserMenu/UserMenu";
 
-// export const HeaderNav = () => {
-//   const isLoggedIn = useSelector(selectIsLoggedIn);
+export const HeaderNav = () => {
+  const isLoggedIn = useSelector(selectIsLoggedIn);
  
-//   return (
-//     <Header>
-//       <Navigation />
-//       {isLoggedIn ? <UserMenu /> : <AuthNav />}
-
-
-
-
-
-
-
-      {/* <nav>
-        <HeaderNavUl>
-          <li>
-            <HeaderLink to="/">Home</HeaderLink>
-          </li>
-          <li>
-            <HeaderLink to="/movies">Movies</HeaderLink>
-          </li>
-        </HeaderNavUl>
-      </nav> */}
-
-
-
-
-//     </Header>
-//   );
-// };
+  return (
+    <Header>
+      <Navigation />
+      {isLoggedIn ? <UserMenu /> : <AuthNav />}      
+    </Header>
+  );
+};
 

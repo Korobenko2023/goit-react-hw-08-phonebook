@@ -1,6 +1,6 @@
 import * as Yup from 'yup';
 import { Formik } from 'formik';
-import { ContactFormButton, ContactFormError, ContactFormField, ContactFormForm, ContactFormLabel } from './ContactForm.style';
+import { ContactFormButton, ContactFormError, ContactFormField, ContactFormForm, ContactFormLabel } from './ContactForm.styled';
 import { useDispatch, useSelector } from 'react-redux';
 import toast from 'react-hot-toast';
 import { selectContacts } from 'redux/contacts/selectors';
