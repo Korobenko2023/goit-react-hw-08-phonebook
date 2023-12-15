@@ -20,7 +20,7 @@ body {
   /* background-color: ${p => p.theme.colors.ocean}; */
   font-size: 16px;
   background-color: transparent;
-  background-image: url('public/Book.jpg');
+  background-image: url('../../image/Book.jpg');
   background-size: cover;
   background-position: center;
   
