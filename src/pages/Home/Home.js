@@ -1,7 +1,9 @@
+import { HomeTitle } from "./Home.styled";
+
 export default function Home() {
     return (
         <div>           
-             <h1>P h o n e b o o k</h1>
+             <HomeTitle>-- P h o n e b o o k --</HomeTitle>
         </div>
     )
 }

@@ -29,20 +29,21 @@ export const RegisterForm = () => {
         email: '',
         password: '',
       }}
-     onSubmit={(values, { resetForm }) => {
-    dispatch(register(values));
-    resetForm();
-  }}
-  validationSchema={validationSchema}
-    >
+
+      onSubmit={(values, { resetForm }) => {
+      dispatch(register(values));
+      resetForm();
+      }}
+      validationSchema={validationSchema}
+      >
         <ContactFormForm>
             <ContactFormLabel htmlFor="name">Name</ContactFormLabel>
-              <ContactFormField id="name" type="text" name="name" placeholder="Jim Doun" />
+              <ContactFormField id="name" type="text" name="name" placeholder="Jim Doun" autoComplete="on" />
               
               <ContactFormError name="name" component="div" />      
               
             <ContactFormLabel htmlFor="email">Email</ContactFormLabel>
-              <ContactFormField id="email" type="email" name="email" placeholder="Email" />
+              <ContactFormField id="email" type="email" name="email" placeholder="Email" autoComplete="on"  />
               
               <ContactFormError name="email" component="div" />
         

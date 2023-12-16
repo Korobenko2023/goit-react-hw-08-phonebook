@@ -46,12 +46,12 @@ export const ContactForm = () => {
     >
         <ContactFormForm>
             <ContactFormLabel htmlFor="name">Name</ContactFormLabel>
-              <ContactFormField id="name" type="text" name="name" placeholder="Jim Doun" />
+              <ContactFormField id="name" type="text" name="name" placeholder="Jim Doun" autoComplete="on"/>
               
               <ContactFormError name="name" component="div" />      
               
             <ContactFormLabel htmlFor="number">Number</ContactFormLabel>
-              <ContactFormField id="number" type="tel" name="number" placeholder="+XX..." />
+              <ContactFormField id="number" type="tel" name="number" placeholder="+XX..." autoComplete="on"/>
               
             <ContactFormError name="number" component="div" />
 

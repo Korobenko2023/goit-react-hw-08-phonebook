@@ -7,6 +7,7 @@ import toast from "react-hot-toast";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchContacts } from "redux/contacts/operations";
 import { selectContacts, selectError, selectIsLoading } from "redux/contacts/selectors";
+import { ContactsTitle } from "./Contacts.styled";
 
 export default function Contacts() {
   const dispatch = useDispatch();
@@ -25,7 +26,7 @@ export default function Contacts() {
          {error && (toast.error('Oops! Something went wrong. Please try again later.'))}
          {contacts.length > 0 ? (
              <>
-               <h2>Contacts list</h2>              
+               <ContactsTitle>Contacts list</ContactsTitle>              
                <Filter />
                <ContactList />
              </>

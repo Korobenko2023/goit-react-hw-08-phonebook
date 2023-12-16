@@ -32,7 +32,7 @@ export const LoginForm = () => {
             <ContactFormForm>
                 
             <ContactFormLabel htmlFor="email">Email</ContactFormLabel>
-              <ContactFormField id="email" type="email" name="email" placeholder="Email" />
+              <ContactFormField id="email" type="email" name="email" placeholder="Email" autoComplete="on"/>
               
               <ContactFormError name="email" component="div" />
         

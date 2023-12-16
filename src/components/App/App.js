@@ -5,8 +5,8 @@ import { refreshUser } from "redux/auth/operations";
 import { selectIsRefreshing } from "redux/auth/selectors";
 import { Navigate, Route, Routes } from "react-router-dom";
 import { AppLayout } from "./AppLayout";
-import { RestrictedRoute } from "components/RestrictedRoute/restrictedRoute";
-import { PrivateRoute } from "components/PrivateRoute/privateRoute";
+import { RestrictedRoute } from "components/RestrictedRoute";
+import { PrivateRoute } from "components/PrivateRoute";
 
 const HomePage = lazy(() => import('../../pages/Home/Home'));
 const RegisterPage = lazy(() => import('../../pages/Register/Register'));

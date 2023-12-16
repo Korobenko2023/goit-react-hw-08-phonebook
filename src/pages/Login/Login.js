@@ -1,13 +1,11 @@
-import { LoginForm } from "components/LoginForm/loginForm";
-import { Helmet } from "react-helmet";
+import { LoginForm } from "components/LoginForm/LoginForm";
+import { LoginTitle } from "./Login.styled";
 
 export default function Login() {
     return (
-        <div> 
-            <Helmet>
-                <title>Login</title>
-            </Helmet>
-              <LoginForm />
+        <div>            
+            <LoginTitle>Log In</LoginTitle>         
+            <LoginForm />
         </div>
     )
 }

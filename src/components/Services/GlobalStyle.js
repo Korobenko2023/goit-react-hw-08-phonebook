@@ -19,10 +19,10 @@ body {
   line-height: 1.3;
   font-size: 16px;
   background: url('image/garden.jpg');
-   background-position: top;
+  background-position: top;
   /* background: url('image/Book.jpg'); 
   background-position: center; */
-   background-size: cover;
+  background-size: cover; 
   
 }
 
