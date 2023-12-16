@@ -6,4 +6,5 @@ text-align: center;
 text-transform: uppercase;
 font-style: italic;
 color: ${p => p.theme.colors.Indigo}; 
+
 `;
