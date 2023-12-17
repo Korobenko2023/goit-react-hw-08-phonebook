@@ -20,8 +20,6 @@ body {
   font-size: 16px;
   background: url('image/garden.jpg');
   background-position: top;
-  /* background: url('image/Book.jpg'); 
-  background-position: center; */
   background-size: cover; 
   
 }

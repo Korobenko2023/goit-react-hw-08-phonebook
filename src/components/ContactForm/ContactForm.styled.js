@@ -39,6 +39,7 @@ export const ContactFormButton = styled.button`
   &:hover,
   &:focus {
     background-color: ${p => p.theme.colors.blue}; 
+    color: ${p => p.theme.colors.white};
   } 
   margin-top: ${p => p.theme.spasing(5)};
   margin-right: auto;

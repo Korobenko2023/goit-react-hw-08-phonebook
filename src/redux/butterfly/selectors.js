@@ -1,1 +1,0 @@
-export const selectButterfly = state => state.butterfly.isVisible;

@@ -46,7 +46,7 @@ const authSlice = createSlice({
 
 const authPersistConfig = {
   key: 'auth',
-   storage,
+  storage,
   whitelist: ['token'],
 }
 

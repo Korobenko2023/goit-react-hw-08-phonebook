@@ -16,6 +16,7 @@ export const ContactItemButton = styled.button`
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-  background-color: ${p => p.theme.colors.blue};  
+  background-color: ${p => p.theme.colors.blue}; 
+  color: ${p => p.theme.colors.white}; 
 }   
 `;
