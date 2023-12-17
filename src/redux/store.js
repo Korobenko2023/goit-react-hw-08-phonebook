@@ -11,12 +11,14 @@ import {
     REGISTER,
 } from 'redux-persist';
 import { authReducer } from "./auth/authSlice";
+import { butterflyReducer } from "./butterfly/butterflySlice";
 
 export const store = configureStore({
     reducer: {
         contacts: contactsReducer,
         filter: filterReducer,
         auth: authReducer,
+        butterfly: butterflyReducer,
     },
     middleware: (getDefaultMiddleware) =>
          getDefaultMiddleware({
